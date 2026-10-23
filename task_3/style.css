@@ -1,0 +1,130 @@
+/* Selector elemen */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Selector class: layout dan box */
+.container {
+    width: 94%;
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 20px;
+    border: 1px solid #d6dfdb;
+}
+
+h1 {
+    margin-top: 0;
+    padding-bottom: 16px;
+    border-bottom: 3px solid #172b20;
+    font-size: 24px;
+}
+
+/* Selector ID: formulir */
+#pendaftaran {
+    margin-top: 24px;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #d6dfdb;
+    border-radius: 6px;
+}
+
+legend {
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dua-kolom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.field {
+    min-width: 0;
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #bccac3;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.judul-pilihan {
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+
+.pilihan input {
+    width: auto;
+    margin: 0 8px 0 0;
+}
+
+button {
+    padding: 10px 24px;
+    border: 1px solid #a9b8b0;
+    border-radius: 4px;
+    background-color: #f1f4f2;
+    color: #222222;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #bccac3;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f4f2;
+}
+
+a {
+    color: #244b36;
+}
+
+@media (max-width: 600px) {
+    .container, fieldset {
+        padding: 12px;
+    }
+
+    .dua-kolom {
+        grid-template-columns: 1fr;
+    }
+}

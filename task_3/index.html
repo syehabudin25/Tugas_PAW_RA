@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pasien Rumah Sakit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pendaftaran Pasien Rumah Sakit</h1>
+        <form id="pendaftaran" action="detail.html" method="get">
+            <fieldset>
+                <legend>Data Diri</legend>
+                <div class="dua-kolom">
+                    <div class="field">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" placeholder="Contoh: Syehab" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Contoh: syehab@example.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="telepon">Nomor Telepon</label>
+                        <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+                    </div>
+                    <div class="field">
+                        <label for="tanggal-lahir">Tanggal Lahir</label>
+                        <input type="date" id="tanggal-lahir" name="tanggal_lahir" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <p class="judul-pilihan">Jenis Kelamin</p>
+                    <label class="pilihan">
+                        <input type="radio" name="jenis_kelamin" value="Pria" required> Pria
+                    </label>
+                    <label class="pilihan">
+                        <input type="radio" name="jenis_kelamin" value="Wanita" required> Wanita
+                    </label>
+                </div>
+                <div class="field">
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" rows="3" placeholder="Alamat lengkap" required></textarea>
+                </div>
+                <div class="field">
+                    <label for="dokter">Dokter Tujuan</label>
+                    <select id="dokter" name="dokter" required>
+                        <option value="">Pilih dokter / spesialis</option>
+                        <option>Dokter Umum</option>
+                        <option>Dokter Gigi</option>
+                        <option>Dokter Spesialis Anak</option>
+                        <option>Dokter Spesialis Mata</option>
+                        <option>Dokter Spesialis Penyakit Dalam</option>
+                    </select>
+                </div>
+                <button type="submit">Daftar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
